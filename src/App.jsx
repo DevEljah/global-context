@@ -6,8 +6,9 @@ import { useGlobalContext } from "./context";
 
 function App() {
   const [count, setCount] = useState(0);
+
   const { name } = useGlobalContext();
-  console.log(name);
+  console.log(name); // "name" value access!
 
   return (
     <div className="App">
